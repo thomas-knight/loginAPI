@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <style>
+       #fin:hover{background-color: seagreen;}
+       #home:hover{background-color: seagreen;}
+       #home1{
+        text-decoration: none;
+        color:white
+      }
+      #reglink:hover{background-color: seagreen;}
+      #reglin{
+        text-decoration: none;
+        color:white
+      }
+    </style>
+  </head>
+    
+  <body>
+    <div class="container">
+    <div data-bs-theme="dark">
+      <button id="home"><a id="home1" href="/">Home</a></button>
+      <button id="reglink"><a id="reglin" href="/reg">Register</a></button>
+      <br><br>
+      <form id="form" action="/front">
+      <input type="text" id="user" placeholder="Insert Username" name="user"></input>
+        <label for="user" data-bs-theme="dark"></label>
+      <input type="text" id="pass" placeholder="Insert Password" name="pass" type="password"></input>
+        <label for="pass" data-bs-theme="dark"></label>
+        <br>
+        <button id="fin" formaction="/front">Login</button>
+      </form>
+    </div>
+    <br><br>
+  </div>
+
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+

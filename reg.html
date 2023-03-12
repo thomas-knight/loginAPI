@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <style>
+      #regbut:hover{background-color: seagreen;}
+      #homelink:hover{background-color: seagreen;}
+      #homelin{
+        text-decoration: none;
+        color:white;
+      }
+    </style>
+  </head>
+    
+  <body>
+   <button id="homelink"><a id="homelin" href="/">Home</a></button>
+    
+    <br>
+    <h1>Register New Account</h1>
+    <form id="box" formtitle="Register new account">
+      <input id="reguser" placeholder="Username" name="reguser"></input>
+      <label for="reguser" data-bs-theme="dark"></label>
+      <input id="regpass" placeholder="Password" name="regpass" type="password"></input>
+      <label for="regpass" data-bs-theme="dark"></label>
+      <br>
+      <button id="regbut"formaction="/register">Register</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
